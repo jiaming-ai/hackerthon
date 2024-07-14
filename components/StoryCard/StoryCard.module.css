@@ -1,0 +1,26 @@
+.card {
+  background-color: var(--mantine-color-body);
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.title {
+  line-height: normal;
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+}
+.image {
+  height: 250px;
+  @media (min-width: $mantine-breakpoint-sm) {
+    height: 240px;
+  }
+  @media (min-width: $mantine-breakpoint-md) {
+    height: 230px;
+  }
+}
+.footer {
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-lg);
+  margin-top: var(--mantine-spacing-md);
+  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+}

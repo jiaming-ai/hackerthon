@@ -1,0 +1,83 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  top:60px;
+  bottom: 0;
+  /* height: clac(100vh-60px); */
+  overflow-y: auto;
+  width: 80px;
+  padding-left : var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-right: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4)); */
+  @media (min-width: $mantine-breakpoint-xs) {
+    width: 140px;
+    align-items: flex-start;
+    }
+  @media (min-width: $mantine-breakpoint-md) {
+    width: 160px;
+    }
+}
+
+.navbarMain {
+  flex: 1;
+}
+
+
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: var(--mantine-font-size-sm);
+  color: var(--mantine-color-dark-9);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: var(--mantine-radius-sm);
+  font-weight: 500;
+  margin-bottom: 12px;
+  justify-content: center;
+
+  &:hover {
+    background-color: var(--mantine-color-gray-2);
+  }
+
+  &[data-active]{
+    background-color: var(--mantine-color-gray-1);
+  }
+
+  @media (min-width: $mantine-breakpoint-xs) {
+    margin-bottom: 7px;
+
+  }
+  
+}
+
+.linkText {
+  display: none;
+  @media (min-width: $mantine-breakpoint-xs) {
+    display: block;
+  }
+}
+
+
+
+.linkIcon {
+  color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-2));
+  width: rem(20px);
+  height: rem(20px);
+  stroke-width: 1.5;
+  
+
+  @media (min-width: $mantine-breakpoint-xs) {
+    display: none;
+  }
+  @media (min-width: $mantine-breakpoint-md) {
+    display: block;
+    margin-right: var(--mantine-spacing-sm);
+  }
+}
